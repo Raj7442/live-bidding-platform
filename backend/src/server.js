@@ -119,6 +119,10 @@ const auctionItems = [
 const connectedUsers = new Map();
 
 // REST API
+app.get('/', (req, res) => {
+  res.json({ message: 'Live Bidding Platform API', status: 'running' });
+});
+
 app.get('/api/items', (req, res) => {
   const now = Date.now();
   const items = auctionItems.map(item => ({
