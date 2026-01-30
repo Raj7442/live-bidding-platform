@@ -8,12 +8,15 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    origin: process.env.CLIENT_URL || "https://live-bidding-platform-five.vercel.app",
     methods: ["GET", "POST"]
   }
 });
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.CLIENT_URL || "https://live-bidding-platform-five.vercel.app",
+  methods: ["GET", "POST"]
+}));
 app.use(express.json());
 
 // In-memory storage (use Redis in production)
