@@ -72,8 +72,8 @@ function App() {
     setTimeout(() => notification.remove(), 3000);
   };
 
-  const categories = ['all', ...new Set(items.map(item => item.category))];
-  const filteredItems = filter === 'all' ? items : items.filter(item => item.category === filter);
+  const categories = ['all', ...new Set(Array.isArray(items) ? items.map(item => item.category) : [])];
+  const filteredItems = filter === 'all' ? items : (Array.isArray(items) ? items.filter(item => item.category === filter) : []);
 
   return (
     <div className="App">
@@ -105,7 +105,7 @@ function App() {
       </div>
       
       <div className="items-grid">
-        {filteredItems.map(item => (
+        {Array.isArray(filteredItems) && filteredItems.map(item => (
           <AuctionItem 
             key={item.id}
             item={item}
