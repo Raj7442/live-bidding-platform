@@ -21,6 +21,6 @@
     }
   ],
   "env": {
-    "REACT_APP_SERVER_URL": "https://your-backend-url.onrender.com"
+    "REACT_APP_SERVER_URL": "https://live-bidding-backend-ru10.onrender.com"
   }
 }

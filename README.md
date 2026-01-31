@@ -2,6 +2,18 @@
 
 A real-time auction platform where users compete to buy items in the final seconds.
 
+## 🚀 Live Demo
+
+- **Frontend**: [https://live-bidding-platform-five.vercel.app/](https://live-bidding-platform-five.vercel.app/)
+- **Backend API**: [https://live-bidding-backend-ru10.onrender.com/](https://live-bidding-backend-ru10.onrender.com/)
+- **API Health Check**: [https://live-bidding-backend-ru10.onrender.com/api/items](https://live-bidding-backend-ru10.onrender.com/api/items)
+
+## 📚 Documentation
+
+- **[Live Demo](docs/LIVE_DEMO.md)** - Access the live application
+- **[Deployment Guide](docs/DEPLOYMENT.md)** - Deploy your own instance
+- **[API Documentation](#api-endpoints)** - API reference below
+
 ## Features
 
 - **Real-time bidding** with Socket.io
@@ -76,6 +88,11 @@ The system prevents race conditions by:
 4. Real-time broadcast of successful bids
 
 ## Deployment
+
+### 🌐 Live Production URLs
+
+- **Frontend (Vercel)**: [https://live-bidding-platform-five.vercel.app/](https://live-bidding-platform-five.vercel.app/)
+- **Backend (Render)**: [https://live-bidding-backend-ru10.onrender.com/](https://live-bidding-backend-ru10.onrender.com/)
 
 ### Production Environment Variables
 

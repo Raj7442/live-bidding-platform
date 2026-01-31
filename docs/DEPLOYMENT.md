@@ -1,5 +1,10 @@
 # 🚀 Deployment Guide
 
+## Live Production URLs
+
+- **Frontend**: [https://live-bidding-platform-five.vercel.app/](https://live-bidding-platform-five.vercel.app/)
+- **Backend**: [https://live-bidding-backend-ru10.onrender.com/](https://live-bidding-backend-ru10.onrender.com/)
+
 ## Quick Deploy Links
 
 ### Backend (Render)
@@ -17,7 +22,7 @@
 2. Import GitHub repo
 3. Set **Root Directory**: `frontend`
 4. Add Environment Variable:
-   - `REACT_APP_SERVER_URL`: `https://your-backend-url.onrender.com`
+   - `REACT_APP_SERVER_URL`: `https://live-bidding-backend-ru10.onrender.com`
 
 ## Alternative: Railway
 1. Go to [railway.app](https://railway.app)
@@ -29,12 +34,12 @@
 ### Backend (Render)
 ```
 NODE_ENV=production
-CLIENT_URL=https://your-frontend-url.vercel.app
+CLIENT_URL=https://live-bidding-platform-five.vercel.app
 ```
 
 ### Frontend (Vercel)
 ```
-REACT_APP_SERVER_URL=https://your-backend-url.onrender.com
+REACT_APP_SERVER_URL=https://live-bidding-backend-ru10.onrender.com
 ```
 
 ## GitHub Setup
@@ -48,5 +53,5 @@ git push -u origin main
 ```
 
 ## Test Deployment
-- Backend health: `https://your-backend-url.onrender.com/api/items`
-- Frontend: `https://your-frontend-url.vercel.app`
+- Backend health: `https://live-bidding-backend-ru10.onrender.com/api/items`
+- Frontend: `https://live-bidding-platform-five.vercel.app`
